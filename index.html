@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>kria.tel</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            main {
+                z-index: 100;
+                position: relative;
+                height: 100%;
+                max-width: 72rem;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #ffffff;
+            }
+            main div:first-child {
+                padding: 2rem;
+            }
+            main > section:nth-child(2) {
+                padding: 0 2rem 2rem 2rem;
+            }
+            .bg-left,
+            .bg-right {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                width: 335px;
+                height: 100%;
+            }
+            .bg-left {
+                background-image: url("./tile-lgrad-rwhite.png");
+                left: 0;
+            }
+            .bg-right {
+                background-image: url("./tile-lwhite-rgrad.png");
+                right: 0;
+            }
+            .space-top {
+                padding-top: 2rem;
+            }
+            .phpbb-emoticon {
+                margin-bottom: -3px;
+            }
+            .section-heading {
+                margin-top: 2rem;
+            }
+            ul.nobull {
+                list-style-type: none;
+            }
+            pre {
+                overflow-x: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <main>
+            <section>
+                <div>
+                    <pre>
+      :::    ::: :::::::::  :::::::::::     :::        ::::::::::: :::::::::: :::  
+     :+:   :+:  :+:    :+:     :+:       :+: :+:          :+:     :+:        :+:   
+    +:+  +:+   +:+    +:+     +:+      +:+   +:+         +:+     +:+        +:+    
+   +#++:++    +#++:++#:      +#+     +#++:++#++:        +#+     +#++:++#   +#+     
+  +#+  +#+   +#+    +#+     +#+     +#+     +#+        +#+     +#+        +#+      
+ #+#   #+#  #+#    #+#     #+#     #+#     #+# #+#    #+#     #+#        #+#       
+###    ### ###    ### ########### ###     ### ###    ###     ########## ##########</pre
+                    >
+
+                    <div class="space-top">
+                        <h1>Welcome to kria.tel</h1>
+                        <p>If you see this page you either:</p>
+                        <ul>
+                            <li>saw this domain name in a DNS record, or similar, of some sort; or</li>
+                            <li>clicked an 88x31 button on some smart person's website.</li>
+                        </ul>
+                        <p>
+                            If you are here for the latter, <a href="https://kria.se/">kria.se</a> may be more in your
+                            interest <img src="./icon_e_biggrin.gif" alt="phpBB Big Grin" class="phpbb-emoticon" />
+                        </p>
+                        <h2 class="section-heading">Infrastructure operations</h2>
+                        <p>Four nameservers are run under kria.tel:</p>
+                        <ul>
+                            <li><code>a.ns.kria.tel</code> at Lagrange Cloud Manchester</li>
+                            <li><code>b.ns.kria.tel</code> at Lagrange Cloud London</li>
+                            <li><code>c.ns.kria.tel</code> at SweHosting Stockholm</li>
+                            <li><code>d.ns.kria.tel</code> at Spaugur Data Reykjavík</li>
+                        </ul>
+                        <p>Two autonomous systems are related to kria.tel:</p>
+                        <ul>
+                            <li>
+                                <a href="https://bgp.tools/as/51019" target="_blank" rel="noreferrer">ASN 51019</a> with
+                                PoPs in Reykjavík, London, Frankfurt, and Toronto
+                            </li>
+                            <li>
+                                <a href="https://bgp.tools/as/57851" target="_blank" rel="noreferrer">ASN 57851</a> with
+                                a PoP in Stockholm and globally anycasted by
+                                <a href="https://bgp.tools/as/52025" target="_blank" rel="noreferrer">ASN 52025</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <p>&copy; 2025 Octan Ltd.</p>
+            </section>
+        </main>
+    </body>
+</html>
